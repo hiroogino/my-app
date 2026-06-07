@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: 型チェック
-        run: npx tsc --noEmit
+        run: npx tsc --noEmit --ignoreDeprecations 5.0
 
       - name: ビルド
         run: npm run build
