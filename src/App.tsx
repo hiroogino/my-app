@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import Home from "./Home"
 import About from "./About"
 import UserDetail from "./UserDetail"
+import Footer from "./Footer"
 import { Toaster } from "@/components/ui/sonner"
 
 function App(): JSX.Element {
@@ -18,6 +19,7 @@ function App(): JSX.Element {
           <Route path="/users/:id" element={<UserDetail />} />
         </Routes>
       </div>
+      <Footer />
       <Toaster />
     </BrowserRouter>
   )

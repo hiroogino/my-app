@@ -1,3 +1,5 @@
+import Button from "./components/Button"
+
 function About(): JSX.Element {
   return (
     <div>
@@ -22,6 +24,19 @@ function About(): JSX.Element {
             <span>React Router</span>
           </li>
         </ul>
+
+        {/* デザイントークンの確認 */}
+        <div className="mt-6 flex gap-4 flex-wrap">
+          <Button color="primary">プライマリ</Button>
+          <Button color="danger">デンジャー</Button>
+          <Button color="success">サクセス</Button>
+          <Button color="secondary">セカンダリ</Button>
+        </div>
+        <div className="mt-4 flex gap-4 flex-wrap items-center">
+          <Button size="sm">Small</Button>
+          <Button size="md">Medium</Button>
+          <Button size="lg">Large</Button>
+        </div>
       </div>
     </div>
   )
