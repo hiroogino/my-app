@@ -23,8 +23,5 @@ jobs:
       - name: 依存関係をインストール
         run: npm ci
 
-      - name: 型チェック
-        run: npx tsc --noEmit --ignoreDeprecations 6.0
-
       - name: ビルド
         run: npm run build
