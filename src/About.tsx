@@ -1,3 +1,5 @@
+import Button from "./components/Button"
+
 function About(): JSX.Element {
   return (
     <div>
